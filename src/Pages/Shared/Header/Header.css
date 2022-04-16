@@ -1,5 +1,5 @@
 nav{
-    background-color: black;
+    background-color: rgb(11, 6, 26);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -15,4 +15,5 @@ nav{
     text-decoration: none;
     margin-right: 18px;
     color: white;
+    font-size: 18px;
 }
