@@ -1,22 +1,22 @@
 import React from "react";
+import useData from "../../../hooks/useData";
 import Banner from "../Banner/Banner";
-import Lunch from "../Lunch/Lunch";
-import Breakfast from "../Breakfast/Breakfast";
-import Dinner from "../Dinner/Dinner";
-import HomeHeader from "../HomeHeader/HomeHeader";
 import WhyChooseUs from "../WhyChooseUs/WhyChooseUs";
+import Breakfast from "../Breakfast/Breakfast";
+import "./Home.css";
 
 const Home = () => {
+  const [foods] = useData();
+
   return (
     <div>
       <Banner />
-      <div className="container">
-        <HomeHeader />
-        <Breakfast />
-        <Lunch />
-        <Dinner />
-        <WhyChooseUs />
+      <div className="container food-container">
+        {foods.map((food) => (
+          <Breakfast food={food}></Breakfast>
+        ))}
       </div>
+      <WhyChooseUs />
     </div>
   );
 };

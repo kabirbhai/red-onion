@@ -1,4 +1,8 @@
 .service-container{
+    display: grid;    
+    gap: 10px;
+}
+.service{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;

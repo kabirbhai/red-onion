@@ -8,7 +8,7 @@ import { faDriversLicense } from "@fortawesome/free-solid-svg-icons";
 
 const WhyChooseUs = () => {
   return (
-    <div className="container">
+    <div className="container service-container">
       <hr />
       <div>
         <h1>Why choose us</h1>
@@ -16,7 +16,7 @@ const WhyChooseUs = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, hic!
         </p>
       </div>
-      <div className="service-container">
+      <div className="service">
         <div className="border">
           <img className="img-fluid" src={service1} alt="" />
           <div className="d-flex">
