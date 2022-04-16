@@ -6,6 +6,14 @@ nav{
     align-items: center;
     padding: 20px;
 }
+.signup-link{
+    background: rgb(200, 13, 13);
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+.signup-link:hover{
+    background-color: red;
+}
 
 .logo img{
     width: 150px;
